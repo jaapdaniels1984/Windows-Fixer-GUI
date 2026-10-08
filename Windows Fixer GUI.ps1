@@ -192,7 +192,7 @@ $Button.Add_Click({
 	}
 	else
 	{
-		Show-MessageBox -Title 'User error detected!' -Message 'Please replace user and Restart this application!' -Icon Information -Buttons OK
+		[System.Windows.MessageBox]::Show('Please replace user and Restart this application!','User error detected!','Ok','Error')
 	}
 	$Button.Text = "Process"
 	$Button.Enabled = $true
